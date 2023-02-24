@@ -1,0 +1,65 @@
+@media (max-width: 1180px) {
+
+   body,
+   html {
+      font-size: 16px;
+   }
+   .main_content li{
+      font-size: 3px;
+      font-weight: 300;
+   }
+
+   .main .first_content .buton a {
+      font-size: 14px;
+   }
+
+   .nav .logo .ms2 .sarkar h1 {
+      display: none;
+   }
+}
+
+@media (max-width: 1000px) {
+
+   body,
+   html {
+      font-size: 13px;
+   }
+
+
+   .prod .prod_container {
+      flex-direction: column;
+      justify-content: center;
+      padding: auto;
+   }
+
+   .prod .prod_container .items {
+      display: block;
+      width: 70%;
+      margin: auto;
+      margin-bottom: 20px;
+   }
+}
+
+
+
+@media (max-width: 660px) {
+
+   body,
+   html {
+      font-size: 10px;
+   }
+
+ 
+
+   .main .first_content .buton a {
+      font-size: 10.5px;
+   }
+}
+
+@media (max-width: 660px) {
+
+
+   .main .first_content .buton a {
+      font-size: 6.5px;
+   }
+}

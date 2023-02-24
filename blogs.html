@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>MY Bank-website | Blogs</title>
+
+
+
+   <!-- Latest compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+   <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+
+   <!-- Optional theme -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"
+      integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Inter+Tight&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="./css/index.css" />
+   <link rel="stylesheet" href="./css/responsive.css" />
+
+   <style>
+      .feed {
+
+         background-image: url('./images_videos/main_page_blog.webp');
+         background-size: cover;
+
+         background-attachment: fixed;
+         background-position: center;
+         min-height: 26vw;
+         height: 30vw;
+      }
+
+      .feed h2 {
+         margin-left: 0%;
+         width: 100%;
+         color: rgb(255, 237, 147);
+         font-size: 5em;
+         margin-top: 23vh;
+         text-align: center;
+         padding: 10px;
+         font-family: 'Alkalami', serif;
+         font-weight: bolder;
+      }
+
+      .feed img {
+         width: 100%;
+         height: auto;
+      }
+
+
+      .prod {
+         padding-bottom: 50px;
+         padding-top: 40px;
+      }
+
+      .prod h2 {
+         color: rgb(21, 70, 193);
+         font-size: 38px;
+         text-align: center;
+         font-family: 'Alkalami', serif;
+         padding: 20 px;
+         margin-bottom: 10px;
+         margin-top: 30px;
+         word-spacing: 13px;
+         text-shadow: 2px 2px 4px lightslategray;
+      }
+
+      .prod .prod_container {
+         display: flex;
+         margin-left: 5%;
+         margin-right: 5%;
+      }
+
+      .prod .prod_container .items {
+         width: 33.3%;
+         margin: 14px;
+         height: 550px;
+         /* position: relative; */
+         border-radius: 17px;
+         border: 3px solid rgb(169, 169, 169);
+         transition: 0.3s;
+      }
+
+      .prod .prod_container .items:hover {
+         box-shadow: 1px 1px 15px 0px rgb(0, 0, 0);
+         
+      }
+
+
+      .prod .prod_container .items .itm_img {
+         width: 100%;
+         height: 260px;
+         overflow: hidden;
+         border-top-left-radius: 15px;
+         border-top-right-radius: 15px;
+         border-bottom: 0.3px solid rgb(69, 62, 62);
+      }
+
+      .prod .prod_container .items .itm_img img {
+         width: 100%;
+         height: 260px;
+      }
+
+      .prod .prod_container .items .itm_content {
+         text-align: center;
+
+      }
+
+      .prod .prod_container .items .itm_content h3 {
+         padding: 10px;
+         font-size: 23px;
+         color: blue;
+         font-weight: 900;
+         font-family: 'Alkalami', serif;
+      }
+
+      .prod .prod_container .items .itm_content p {
+         padding: 10px;
+         font-size: 16px;
+         font-weight: 200;
+         font-family: 'Alkalami', serif;
+      }
+
+      .prod .prod_container .items .itm_content a {
+         margin-top: 20px;
+         font-size: large;
+         align-self: flex-start;
+         text-decoration: none;
+         height: 10vh;
+         width: 5%;
+         margin: 50px;
+         padding: 10px 20px;
+         background-color: rgb(194, 192, 205);
+         color: rgb(8, 4, 4);
+         font-family: cosmic sans-serif;
+         text-align: left;
+         border: 2px solid rgb(30, 33, 30);
+         border-radius: 10px;
+         position: relative;
+         bottom: -15px;
+         transition: 0.3s;
+      }
+
+
+      .prod .prod_container .items .itm_content a:hover {
+         font-weight: 900;
+         background-color: rgb(172, 228, 241);
+         color: rgb(35, 31, 148);
+         border: none;
+         border-bottom: 4px solid rgb(16, 14, 44);
+      }
+
+      .prod .prd_btn {
+         text-align: center;
+         margin-top: 58px;
+      }
+
+      .prod .prd_btn a {
+
+
+         font-size: large;
+         align-self: flex-start;
+         text-decoration: none;
+
+         margin: 50px;
+         padding: 10px 20px;
+         background-color: rgb(194, 192, 205);
+         color: rgb(8, 4, 4);
+         font-family: cosmic sans-serif;
+         text-align: left;
+         border: 2px solid rgb(30, 33, 30);
+         border-radius: 10px;
+      }
+
+      .prod .prd_btn a:hover {
+         font-weight: 900;
+         background-color: rgb(172, 228, 241);
+         color: rgb(35, 31, 148);
+         border: none;
+         border-bottom: 4px solid rgb(16, 14, 44);
+         transition: 0.5s;
+      }
+
+      .prod::after {
+         position: absolute;
+         content: '';
+         height: 0.225rem;
+         width: 100%;
+         background-color: black;
+         left: 0;
+        margin-top: 6rem;
+      }
+
+      footer {
+         margin-top: 10vh;
+      }
+
+      .blog {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: flex-start;
+         flex-direction: column;
+      }
+
+      .blog .noteCard .card-body {
+         padding: 15px;
+         border: 1px solid black;
+         border-radius: 5px;
+         text-align: left;
+         margin: 5px;
+      }
+
+      .blog .noteCard .card-body h5 {
+         font-weight: bold;
+      }
+   </style>
+
+
+</head>
+
+<body>
+   <nav class="nav nav_top">
+      <div class="logo">
+         <div class="ms2">
+            <div class="mayuk">
+               <img src="./images_videos/logo.png" alt="image not found" width="120" height="120">
+            </div>
+            <div class="sarkar">
+               <h1>
+                  national BANK
+               </h1>
+            </div>
+         </div>
+      </div>
+
+      <div class="nav_side">
+         <a href="index.html">Home</a>
+         <a href="about.html"> About us</a>
+         <a href="service.html"> Services</a>
+         <a href="blogs.html" class="active"> Blogs</a>
+         <a href="contact.html"> Contact</a>
+         <a href="./PHP/login.php"> login</a>
+         <a href="./PHP/signup.php"> Account Open</a>
+      </div>
+   </nav>
+
+
+   <div class="feed">
+
+      <h2>BLOGS</h2>
+
+   </div>
+
+
+
+   <div class="prod">
+
+      <div class="prod_container">
+         <div class="items">
+            <div class="itm_img">
+               <img src="./images_videos/blog1.webp" alt="">
+            </div>
+            <div class="itm_content">
+               <h3>Top reasons for choosing us</h3>
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsa voluptates deleniti iure
+                  reprehenderit quaerat accusamus quis eos!</p>
+               <hr>
+               <a href="">Read more --></a>
+            </div>
+         </div>
+
+         <div class="items">
+            <div class="itm_img">
+               <img src="./images_videos/blog2.jpg" alt="">
+            </div>
+            <div class="itm_content">
+               <h3> 24 * 7 Services available </h3>
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsa voluptates deleniti iure
+                  reprehenderit quaerat accusamus quis eos!</p>
+               <hr>
+               <a href="">Read more --></a>
+            </div>
+         </div>
+
+         <div class="items">
+            <div class="itm_img">
+               <img src="./images_videos/blog3.jpg" alt="">
+            </div>
+            <div class="itm_content">
+               <h3>We provide the best services </h3>
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsa voluptates deleniti iure
+                  reprehenderit quaerat accusamus quis eos!</p>
+               <hr>
+               <a href="">Read more --></a>
+            </div>
+         </div>
+
+
+      </div>
+      <hr>
+      <div class="prd_btn">
+         <a href="service.html">Read more articles</a>
+      </div>
+
+   </div>
+   <hr>
+
+   <div class="container my-3">
+      <h1> Comment Section </h1>
+      <div class="card">
+         <div class="card-body">
+            <h5 class="card-title">Add a comment</h5>
+            <div class="form-group">
+               <textarea class="form-control" id="addTxt" rows="3" placeholder="enter your message here"></textarea>
+            </div>
+            <button class="btn btn-primary" id="addBtn">POST</button>
+         </div>
+      </div>
+      <hr>
+      <h1>Your Comments</h1>
+      <hr>
+
+      <div id="notes" class="row container-fluid blog"> </div>
+   </div>
+
+
+
+
+   <footer>
+      <div class="footer_logo">
+         <a href="index.html">
+            <div class="mayuk">
+               <img src="./images_videos/logo.png" alt="image not found" width="150" height="150">
+            </div>
+
+         </a>
+      </div>
+
+      <div class="pages">
+         <a href="index.html">Home</a>|
+         <a href="about.html"> About us</a>|
+         <a href="service.html"> Services</a>|
+         <a href="blogs.html"> Blogs</a>|
+         <a href="contact.html"> Contact</a>|
+         <a href="./PHP/login.php"> login</a>|
+         <a href="./PHP/signup.php"> signup</a>
+      </div>
+
+      <div class="doc">
+         <h3>Documentsnts</h3>
+         <a href="#">Privacy Policy</a>|
+         <a href="#">Terms ofUse</a>|
+         <a href="#">Refund Policy</a>
+      </div>
+      <div class="social">
+         <h3>Follow Us</h3>
+         <a href="#">
+
+
+            <i class="fa-brands fa-facebook"></i>
+            facebook </a>|
+         <a href="#"><i class="fa-brands fa-instagram"></i> instagram </a>|
+         <a href="#"><i class="fa-brands fa-linkedin"></i> Linkedin </a>|
+         <a href="#" target="_blank"> <i class="fa-brands fa-twitter"></i> Twitter </a> <!-- open in new page -->
+      </div>
+
+      <div class="contact">
+         <h3>Contact Us </h3>
+         <a href="#"> <i class="fa-brands fa-whatsapp"></i> Whatsapp</a>|
+         <a href="#"> <i class="fa-solid fa-phone"></i> Phone</a>|
+         <a href="#"> <i class="fa-regular fa-envelope"></i> Email</a>
+      </div>
+
+
+      <hr>
+      <p> Copyright &copy; 2021 National_Bank. All rights reserved</p>
+   </footer>
+
+   <script src="index.js"></script>
+
+
+   <script src="https://kit.fontawesome.com/17d03ae9d0.js" crossorigin="anonymous"></script>
+
+
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+
+</body>
+
+</html>
